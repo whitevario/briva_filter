@@ -48,7 +48,7 @@ def bersihkan_nominal(x):
 st.title("💳 Pemisah Transaksi BRIVA")
 
 # tampilkan nama Anda di layar
-st.markdown("👩‍💻 Created by **Tri**")
+st.markdown("👩‍💻 Created by **Tri**@2025")
 
 uploaded_files = st.file_uploader(
     "Upload file transaksi (Excel, bisa banyak)",
@@ -172,3 +172,4 @@ if uploaded_files:
         file_name="rekap_briva.xlsx",
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
+
