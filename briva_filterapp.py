@@ -47,6 +47,9 @@ def bersihkan_nominal(x):
 # ==== STREAMLIT APP ====
 st.title("💳 Pemisah Transaksi BRIVA")
 
+# tampilkan nama Anda di layar
+st.markdown("👩‍💻 Created by **Tri**")
+
 uploaded_files = st.file_uploader(
     "Upload file transaksi (Excel, bisa banyak)",
     type=["xlsx", "xls"],   # ✅ sekarang bisa xls & xlsx
