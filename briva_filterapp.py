@@ -45,6 +45,8 @@ def bersihkan_nominal(x):
         return 0
 
 # ==== STREAMLIT APP ====
+st.set_page_config(page_title="BRIVA Converter", layout="wide")
+
 st.title("💳 Pemisah Transaksi BRIVA")
 
 # tampilkan nama Anda di layar
@@ -172,5 +174,6 @@ if uploaded_files:
         file_name="rekap_briva.xlsx",
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
+
 
 
