@@ -51,7 +51,7 @@ st.title("💳 Pemisah Transaksi BRIVA")
 st.markdown("👩‍💻 Created by **Tri**@2025")
 
 uploaded_files = st.file_uploader(
-    "Upload file transaksi (Excel, bisa banyak)",
+    "Upload file Excel rekening koran [bisa banyak]",
     type=["xlsx", "xls"],   # ✅ sekarang bisa xls & xlsx
     accept_multiple_files=True
 )
@@ -172,4 +172,5 @@ if uploaded_files:
         file_name="rekap_briva.xlsx",
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
+
 
