@@ -50,7 +50,7 @@ st.set_page_config(page_title="BRIVA Converter", layout="wide")
 st.title("💳 Pemisah Transaksi BRIVA")
 
 # tampilkan nama Anda di layar
-st.markdown("👩‍💻 Created by **Tri**@2025")
+st.markdown("👩‍💻 Created by **Tri**©2025")
 
 uploaded_files = st.file_uploader(
     "Upload file Excel rekening koran [bisa banyak]",
@@ -175,5 +175,27 @@ if uploaded_files:
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
 
+# ---------- Kredit tetap di kiri bawah ----------
+st.markdown(
+    """
+    <style>
+    .kredit-fixed {
+        position: fixed;
+        left: 12px;
+        bottom: 12px;
+        z-index: 9999;
+        color: rgba(100,100,100,0.9);
+        font-size: 13px;
+        background: rgba(255,255,255,0.6);
+        padding: 4px 8px;
+        border-radius: 6px;
+        backdrop-filter: blur(4px);
+        pointer-events: none;
+    }
+    </style>
+    <div class="kredit-fixed">© 2025 Created by Tri 👩‍💻</div>
+    """,
+    unsafe_allow_html=True
+)
 
 
