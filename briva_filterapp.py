@@ -193,9 +193,12 @@ st.markdown(
         pointer-events: none;
     }
     </style>
-    <div class="kredit-fixed">© 2025 Created by Tri 👩‍💻</div>
+    <div class="kredit-fixed">© 2025 Created by Tri 👩‍💻
+    💖 Beri Kontribusi Sekarang shopeepay BRI: 112-08175229969
+    Terima kasih banyak atas dukunganmu! 🙏</div>
     """,
     unsafe_allow_html=True
 )
+
 
 
