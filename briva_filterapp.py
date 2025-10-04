@@ -47,10 +47,16 @@ def bersihkan_nominal(x):
 # ==== STREAMLIT APP ====
 st.set_page_config(page_title="BRIVA Converter", layout="wide")
 
-col1, col2 = st.columns([1, 8])
-with col1:
-    st.image("https://seeklogo.com/images/B/bri-bank-rakyat-indonesia-logo-0C6B92D569-seeklogo.com.png", width=60)
-with col2:
+st.markdown(
+    """
+    <h1 style="display:flex; align-items:center; gap:10px;">
+        <img src="https://seeklogo.com/images/B/bri-bank-rakyat-indonesia-logo-0C6B92D569-seeklogo.com.png" 
+             alt="BRI Logo" width="50">
+     Pemisah Transaksi BRIVA 
+    </h1>
+    """,
+    unsafe_allow_html=True
+)
 st.title("💳 Pemisah Transaksi BRIVA")
 
 # tampilkan nama Anda di layar
@@ -203,6 +209,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
